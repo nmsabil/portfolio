@@ -23,12 +23,11 @@ $("#navbarCollapse").scrollspy({
   offset: 20
 })
 
+
 // work icon tooltips
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
-
-
 
 $(window).on("load", function () {
   var e = $(".work-filter")
@@ -41,5 +40,6 @@ $(window).on("load", function () {
     }
   })
 })
+
 
 

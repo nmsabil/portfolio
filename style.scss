@@ -4,13 +4,16 @@
 /*======================
         btn & links colour
 ========================*/
+.active{
+  color: #e65f78 !important;
+}
 .text-custom,
 .custom-nav .navbar-nav li a:hover,
 .custom-nav .navbar-nav li a:active,
 .custom-nav .navbar-nav li.active a,
 .custom-nav.stickyadd .navbar-nav li a:hover,
 .custom-nav.stickyadd .navbar-nav li a:active,
-.custom-nav.stickyadd .navbar-nav li.active a,
+.custom-nav.stickyadd .navbar-nav li.active,
 .about-social li a:hover,
 .header-social li a:hover {
     color: #e65f78 !important;
@@ -235,7 +238,7 @@ button:focus {
   margin-bottom: 0px;
   transition: all 0.5s ease-in-out;
   .navbar-nav li a {
-    color: #fff !important;
+    color: #fff;
     font-size: 15px;
     background-color: transparent !important;
     margin: 0 7px;
@@ -278,7 +281,7 @@ button:focus {
   padding: 15px 0px;
 }
 .custom-nav.stickyadd .navbar-nav li a {
-  color: #000 !important;
+  color: #000;
 }
 
 /*===========================
@@ -423,10 +426,7 @@ canvas{
   transition: all 0.5s;
   margin-top: 5px;
 }
-.work_menu a.active,
-.work_menu a:hover {
-  color: #fff !important;
-}
+
 .work_item {
   position: relative;
   padding: 15px;
