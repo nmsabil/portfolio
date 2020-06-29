@@ -9,13 +9,15 @@
 .custom-nav.stickyadd .navbar-nav li a:hover,
 .custom-nav.stickyadd .navbar-nav li a:active,
 .custom-nav.stickyadd .navbar-nav li.active a,
-.about-social li a:hover {
+.about-social li a:hover,
+.header-social li a:hover {
   color: #e65f78 !important;
 }
 
 .btn-custom,
 .form-kerri .form-control:focus,
-.about-social li a:hover {
+.about-social li a:hover,
+.header-social li a:hover {
   border-color: #e65f78;
 }
 
@@ -24,7 +26,8 @@
 .services-boxes .services-title-border,
 .owl-theme .owl-controls .owl-page span,
 .work_menu a.active,
-.work_menu a:hover {
+.work_menu a:hover,
+.work_box .work_detail .border:hover {
   background-color: #e65f78;
 }
 
@@ -404,5 +407,174 @@ canvas {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
           clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
   position: relative;
+}
+
+.header-social li a {
+  color: #ffffff;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid #d4d4d4;
+  line-height: 38px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+/*===========================
+        ABOUT
+=============================*/
+#about {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(82%, white), color-stop(96%, #f8f9fa));
+  background: linear-gradient(180deg, white 82%, #f8f9fa 96%);
+}
+
+.about-social {
+  z-index: 2000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tooltip {
+  position: fixed;
+}
+
+.about-social li a {
+  color: #555;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  font-size: 35px;
+  border-radius: 50%;
+  border: 2px solid #d4d4d4;
+  line-height: 49px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center;
+  cursor: initial;
+}
+
+/*===========================
+        8.WORK
+=============================*/
+.work_menu li a {
+  cursor: pointer;
+  display: block;
+  border-radius: 30px;
+  letter-spacing: 0.03em;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-top: 5px;
+}
+
+.work_menu a.active,
+.work_menu a:hover {
+  color: #fff !important;
+}
+
+.work_item {
+  position: relative;
+  padding: 15px;
+}
+
+.work_box {
+  overflow: hidden;
+  position: relative;
+  border: 0.5px solid black;
+  border-radius: 15px;
+}
+
+.work_box .work_img {
+  position: relative;
+  overflow: hidden;
+}
+
+.work_box .work_img:after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+
+.work_box .work_img > img {
+  -webkit-transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+  border-radius: 0;
+}
+
+.work_box .work_detail {
+  opacity: 0;
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+
+.work_box .work_detail h3, .work_box .work_detail h5 {
+  color: white;
+  cursor: default;
+}
+
+.work_box .work_detail ul {
+  list-style: none;
+  padding: 0;
+}
+
+.work_box .work_detail ul li {
+  color: white;
+  cursor: default;
+}
+
+.work_box .work_detail .border {
+  font-size: 18px;
+  padding: 5px 20px;
+  border: 1px solid white;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.work_box .work_detail p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.work_box:hover .work_detail {
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  opacity: 1;
+}
+
+.work_box:hover .work_img:after {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.work_box:hover .work_img > img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=style.css.map */
