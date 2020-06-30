@@ -85,6 +85,7 @@ button:focus {
   bottom: 0;
   background-color: #fff;
   z-index: 9999999;
+
 }
 #status {
   width: 40px;
@@ -414,6 +415,11 @@ canvas{
 /*===========================
         8.WORK
 =============================*/
+.background-custom{
+  background-color: #F8F9FA;
+  top: -60px;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 6%);
+}
 .work_menu li a {
   cursor: pointer;
   display: block;
@@ -485,6 +491,10 @@ canvas{
   h3{
     
   }
+
+  span {
+    z-index: 20;
+  }
   .border {
     font-size: 18px;
     padding: 5px 20px;
@@ -493,7 +503,9 @@ canvas{
     border-radius: 10px;
     cursor: pointer;
     color: white;
-  
+    position: relative;
+    transition: ease-in-out 0.2s;
+    background-color: lighten( #555555, 5% );
   }
 
 }
@@ -513,4 +525,155 @@ canvas{
 }
 .work_box:hover .work_img > img {
   transform: scale(1.05);
+}
+
+
+
+
+/*======================
+        COntact
+========================*/
+.padding-custom{
+  top: -120px;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 6%);
+  padding-bottom: 0px;
+  margin-bottom: -70px;
+
+}
+.form-sabil .form-control {
+  box-shadow: none !important;
+  height: 50px;
+  border: 2px solid #e0e0e0;
+
+  textarea.form-control {
+    height: auto;
+  }
+}
+.contact_detail-title {
+  font-size: 18px;
+}
+.error {
+  margin: 8px 0px;
+  display: none;
+  color: red;
+}
+.error_msg {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: red;
+  font-weight: 700;
+}
+.gig_loader {
+  display: none;
+}
+#success_msg {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#success_msg h3 {
+  color: #0dba26;
+  font-size: 22px;
+}
+
+#comments{
+  height: 100px;
+}
+
+/*======================
+        CV
+========================*/
+
+.download-resume{
+  padding: 0;
+  top: -50px;
+
+}
+
+.btn-download{
+  cursor: pointer;
+  background-color: #E65F78;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+    color: #fff;
+  position: relative;
+  top: 100px;
+  padding: 20px;
+  clip-path: polygon(50% 0%, 100% 60%, 100% 100%, 0 100%, 0 60%);
+  transition: ease-in-out 0.2s;
+  span{
+      i{
+      display: block;
+        font-size: 30px;
+        z-index: 200;
+        position: relative;
+        top: -11px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: bottom;
+      }
+    }
+      &:hover{
+      background-color: #d8576f;
+        top: 97px;
+      }
+     }
+    
+
+    i {
+      animation-name: bounce;
+      animation-timing-function: ease;
+  }
+  @keyframes bounce{
+      0%   { transform: scale(1,1)      translateY(0); }
+      10%  { transform: scale(1.1,.9)   translateY(0); }
+      30%  { transform: scale(.9,1.1)   translateY(-1px); }
+      50%  { transform: scale(1.05,.95) translateY(0); }
+      57%  { transform: scale(1,1)      translateY(-3px); }
+      64%  { transform: scale(1,1)      translateY(0); }
+      100% { transform: scale(1,1)      translateY(0); }
+  }
+
+/*======================
+        FOOTER
+========================*/
+.footer {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 10%);
+  padding: 70px 0px;
+  background-color: #242424 !important;
+
+}
+.footer .footer-alt p {
+  font-size: 16px;
+}
+.footer .footer-alt ul li a {
+  border-radius: 50%;
+  transition: all 0.5s;
+  background-color: rgba(241, 241, 241, 0.08);
+  width: 42px;
+  height: 42px;
+  display: block;
+  font-size: 18px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.back_top {
+  text-align: center;
+  position: fixed;
+  bottom: 15px;
+  height: 35px;
+  width: 35px;
+  display: none;
+  z-index: 10000;
+  border-radius: 3px;
+  right: 20px;
+  transition: all 0.5s;
+}
+.back_top i {
+  color: #fff;
+  line-height: 35px;
+  font-size: 32px;
+  display: block;
 }
