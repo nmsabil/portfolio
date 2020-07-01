@@ -52,7 +52,7 @@
 ========================*/
 body {
   font-family: 'Nunito', sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 h1,
 h2,
@@ -603,8 +603,9 @@ canvas{
   clip-path: polygon(50% 0%, 100% 60%, 100% 100%, 0 100%, 0 60%);
   transition: ease-in-out 0.2s;
   span{
+
       i{
-      display: block;
+      display: inline;
         font-size: 30px;
         z-index: 200;
         position: relative;
@@ -612,6 +613,8 @@ canvas{
         animation-duration: 2s;
         animation-iteration-count: infinite;
         transform-origin: bottom;
+        animation-name: bounce;
+        animation-timing-function: ease;
       }
     }
       &:hover{
@@ -621,18 +624,15 @@ canvas{
      }
     
 
-    i {
-      animation-name: bounce;
-      animation-timing-function: ease;
-  }
+
   @keyframes bounce{
-      0%   { transform: scale(1,1)      translateY(0); }
-      10%  { transform: scale(1.1,.9)   translateY(0); }
-      30%  { transform: scale(.9,1.1)   translateY(-1px); }
-      50%  { transform: scale(1.05,.95) translateY(0); }
-      57%  { transform: scale(1,1)      translateY(-3px); }
-      64%  { transform: scale(1,1)      translateY(0); }
-      100% { transform: scale(1,1)      translateY(0); }
+      0%   { transform: scale(1, 1)      }
+      10%  { transform: scale(1,.9)   }
+      30%  { transform: scale(.9,1)    }
+      50%  { transform: scale(1,.95)     }
+      57%  { transform: scale(1,1)       }
+      64%  { transform: scale(1,1)       }
+      100% { transform: scale(1,1)       }
   }
 
 /*======================

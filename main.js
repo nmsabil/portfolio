@@ -6,7 +6,7 @@ $(window).on("scroll", function () {
 
 
 
-// on collpased nav when link is clicked hide it.
+// on collpased(smaller screens) nav when link is clicked hide it.
 $(document).on("click", ".navbar-collapse.show", function (e) {
   $(e.target).is("a") && $(this).collapse("hide")
 })
