@@ -52,7 +52,7 @@
 ========================*/
 body {
   font-family: 'Nunito', sans-serif;
-  overflow-x: hidden !important;
+
 }
 h1,
 h2,
@@ -488,9 +488,7 @@ canvas{
     }
    
   }
-  h3{
-    
-  }
+
 
   span {
     z-index: 20;
@@ -676,4 +674,58 @@ canvas{
   line-height: 35px;
   font-size: 32px;
   display: block;
+}
+
+
+/*===========================
+        RESPONSIVE
+=============================*/
+@media (min-width: 200px) and (max-width: 768px) {
+  .custom-nav {
+      background-color: #fff !important;
+      padding: 10px 0px !important;
+
+  }
+  .custom-nav .container {
+      width: 85%;
+  }
+  .custom-nav .navbar-toggler {
+      color: #000;
+      font-size: 32px;
+      border: none;
+  }
+  .custom-nav .logo .logo-dark {
+      display: inline-block;
+  }
+  .custom-nav .navbar-nav li a {
+      color: rgba(0, 0, 0, 0.6) !important;
+      text-align: center;
+      font-size: 20px;
+      padding: 20px;
+  }
+
+  .custom-nav .navbar-nav li a.active{
+    color: #e65f78 !important;
+  }
+  .custom-nav .logo .logo-light {
+      display: none;
+  }
+  .h-100vh {
+      height: auto;
+      padding: 120px 0 140px;
+  }
+  .header-bg-img {
+      padding: 120px 0 140px;
+  }
+.h-100vh {
+      height: auto;
+      padding: 120px 0 190px;
+  }
+  .custom-nav .navbar-nav li a {
+      margin: 0 0px;
+      line-height: 15px;
+  }
+  .header-name {
+      font-size: 38px;
+  }
 }
