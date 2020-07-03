@@ -435,7 +435,7 @@ canvas {
 }
 
 .about-social {
-  z-index: 2000;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
