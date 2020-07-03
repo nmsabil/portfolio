@@ -5,7 +5,8 @@
         btn & links colour
 ========================*/
 .active{
-  color: #e65f78 !important;
+
+  border-bottom: 2px solid #e65f78;
 }
 .text-custom,
 .custom-nav .navbar-nav li a:hover,
@@ -17,6 +18,7 @@
 .about-social li a:hover,
 .header-social li a:hover {
     color: #e65f78 !important;
+
 }
 .btn-custom,
 .form-kerri .form-control:focus,
@@ -248,6 +250,7 @@ button:focus {
     line-height: 24px;
     transition: all 0.5s;
     font-weight: 500;
+    
   }
   .navbar-brand .logo-light,
   .navbar-brand .logo-dark {

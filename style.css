@@ -3,7 +3,7 @@
         btn & links colour
 ========================*/
 .active {
-  color: #e65f78 !important;
+  border-bottom: 2px solid #e65f78;
 }
 
 .text-custom,

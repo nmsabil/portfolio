@@ -60,3 +60,10 @@ window.onload = function () {
     overflow: "visible"
   })
 }
+
+// close navbar when clicked outside on smaller screens
+$(function () {
+  $(document).click(function (event) {
+    $('.navbar-collapse').collapse('hide');
+  });
+});
