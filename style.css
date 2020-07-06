@@ -35,6 +35,11 @@
   background-color: #e65f78;
 }
 
+.work_box .work_detail .border:hover {
+  border: 1px solid #d8576f !important;
+  letter-spacing: 2px;
+}
+
 .btn-custom:hover,
 .btn-custom:focus,
 .btn-custom:active,
@@ -163,6 +168,10 @@ button:focus {
   right: 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.back_top:hover {
+  background-color: #d8576f;
 }
 
 .back_top i {
@@ -372,7 +381,7 @@ canvas {
 
 .scroll_down {
   position: absolute;
-  bottom: 5vh;
+  bottom: 9vh;
   width: 100%;
   text-align: center;
   color: #fff;
@@ -568,7 +577,7 @@ canvas {
   position: relative;
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
-  background-color: #626262;
+  background-color: #e9758b;
 }
 
 .work_box .work_detail p {
@@ -597,8 +606,8 @@ canvas {
 ========================*/
 .padding-custom {
   top: -120px;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 6%);
-          clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 6%);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 7%);
+          clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 7%);
   padding-bottom: 0px;
   margin-bottom: -70px;
 }
@@ -846,7 +855,6 @@ canvas {
     padding: 120px 0 140px;
   }
   .h-100vh {
-    height: auto;
     padding: 120px 0 190px;
   }
   .custom-nav .navbar-nav li a {
@@ -914,6 +922,18 @@ canvas {
   }
   .btn-download {
     font-size: 10px;
+    padding-top: 25px;
+  }
+  .btn-download span i {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .h-100vh {
+    height: 100vh;
+  }
+  .scroll_down {
+    bottom: 9vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

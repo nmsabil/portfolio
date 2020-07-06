@@ -7,6 +7,7 @@
 .active{
 
   border-bottom: 2px solid #e65f78;
+ 
 }
 .text-custom,
 .custom-nav .navbar-nav li a:hover,
@@ -16,7 +17,8 @@
 .custom-nav.stickyadd .navbar-nav li a:active,
 .custom-nav.stickyadd .navbar-nav li.active,
 .about-social li a:hover,
-.header-social li a:hover {
+.header-social li a:hover
+ {
     color: #e65f78 !important;
 
 }
@@ -34,6 +36,10 @@
 .work_menu a:hover,
 .work_box .work_detail .border:hover {
     background-color: #e65f78;
+}
+.work_box .work_detail .border:hover{
+  border: 1px solid #d8576f !important;
+  letter-spacing: 2px;
 }
 .btn-custom:hover,
 .btn-custom:focus,
@@ -150,6 +156,9 @@ button:focus {
   border-radius: 3px;
   right: 20px;
   transition: all 0.5s;
+  &:hover{
+    background-color: #d8576f;
+  }
 }
 .back_top i {
   color: #fff;
@@ -250,6 +259,7 @@ button:focus {
     line-height: 24px;
     transition: all 0.5s;
     font-weight: 500;
+
     
   }
   .navbar-brand .logo-light,
@@ -287,6 +297,7 @@ button:focus {
 }
 .custom-nav.stickyadd .navbar-nav li a {
   color: #000;
+
 }
 
 /*===========================
@@ -329,12 +340,13 @@ canvas{
 }
 .scroll_down {
   position: absolute;
-  bottom: 5vh;
+  bottom: 9vh;
   width: 100%;
   text-align: center;
   color: #fff;
   font-size: 13px;
   z-index: 8;
+ 
 }
 .scroll_down i {
   position: relative;
@@ -348,6 +360,7 @@ canvas{
   display: inline-block;
   color: #fff;
   font-size: 10px;
+  
 }
 .scroll_down i:after {
   content: "";
@@ -362,6 +375,7 @@ canvas{
   
   border-top: 8px solid white;
   transform: translate(-50%, -50%);
+  
 }
 
 .clip-home {
@@ -508,7 +522,7 @@ canvas{
     color: white;
     position: relative;
     transition: ease-in-out 0.2s;
-    background-color: lighten( #555555, 5% );
+    background-color: lighten( #E65F78, 5% );
   }
 
 }
@@ -538,7 +552,7 @@ canvas{
 ========================*/
 .padding-custom{
   top: -120px;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 6%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 7%);
   padding-bottom: 0px;
   margin-bottom: -70px;
 
@@ -723,7 +737,7 @@ canvas{
       padding: 120px 0 140px;
   }
 .h-100vh {
-      height: auto;
+
       padding: 120px 0 190px;
   }
   .custom-nav .navbar-nav li a {
@@ -796,10 +810,22 @@ canvas{
 
   .btn-download{
     font-size: 10px;
+    padding-top: 25px;
+  }
+ 
+  .btn-download span i{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
+  .h-100vh{
+    height: 100vh;
+  }
+
+  .scroll_down {
+
+    bottom: 9vh;
+   
+  }
 }
-
-
-
-
