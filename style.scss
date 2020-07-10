@@ -6,7 +6,7 @@
 ========================*/
 .active{
 
-  border-bottom: 2px solid #e65f78;
+  border-bottom: 2px solid #1ABC9B;
  
 }
 .text-custom,
@@ -19,26 +19,25 @@
 .about-social li a:hover,
 .header-social li a:hover
  {
-    color: #e65f78 !important;
+    color: #1ABC9B !important;
 
 }
 .btn-custom,
 .form-kerri .form-control:focus,
 .about-social li a:hover,
 .header-social li a:hover {
-    border-color: #e65f78;
+    border-color: #1ABC9B;
 }
 .btn-custom,
 .back_top,
 .services-boxes .services-title-border,
-.owl-theme .owl-controls .owl-page span,
 .work_menu a.active,
 .work_menu a:hover,
 .work_box .work_detail .border:hover {
-    background-color: #e65f78;
+    background-color: #1ABC9B;
 }
 .work_box .work_detail .border:hover{
-  border: 1px solid #d8576f !important;
+  border: 1px solid #127c67 !important;
   letter-spacing: 2px;
 }
 .btn-custom:hover,
@@ -50,8 +49,8 @@
 .btn-custom:focus,
 .btn-custom:hover,
 .open > .dropdown-toggle.btn-custom {
-    background-color: #d8576f;
-    border-color: #d8576f;
+    background-color: #127c67;
+    border-color: #127c67;
 }
 
 
@@ -109,10 +108,10 @@ button:focus {
   font-size: 10px;
   position: relative;
   text-indent: -9999em;
-  border-top: 5px solid rgba(0, 0, 0, 0.2);
-  border-right: 5px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 5px solid rgba(0, 0, 0, 0.2);
-  border-left: 5px solid #000;
+  border-top: 5px solid rgba(26, 188, 155, 0.2);
+  border-right: 5px solid rgba(26, 188, 155, 0.2);
+  border-bottom: 5px solid rgba(26, 188, 155, 0.2);
+  border-left: 5px solid #127c67;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -157,7 +156,7 @@ button:focus {
   right: 20px;
   transition: all 0.5s;
   &:hover{
-    background-color: #d8576f;
+    background-color: #12816b;
   }
 }
 .back_top i {
@@ -346,6 +345,9 @@ canvas{
   color: #fff;
   font-size: 13px;
   z-index: 8;
+
+
+  
  
 }
 .scroll_down i {
@@ -360,14 +362,23 @@ canvas{
   display: inline-block;
   color: #fff;
   font-size: 10px;
+  transition: ease-in 0.5s;
+  &:hover{
+    border-color: #1ABC9B !important;
+    &:after{
+      position: relative;
+      transition: ease-in 0.5s;
+    }
+  }
+  
   
 }
 .scroll_down i:after {
   content: "";
-  position: absolute;
-  top: 30px;
+  position: block;
+  top: 10px;
 
-
+  transition: ease-in 1s;
   z-index: -1;
   background: transparent;
   border-left: 8px solid transparent;
@@ -375,7 +386,7 @@ canvas{
   
   border-top: 8px solid white;
   transform: translate(-50%, -50%);
-  
+
 }
 
 .clip-home {
@@ -522,7 +533,7 @@ canvas{
     color: white;
     position: relative;
     transition: ease-in-out 0.2s;
-    background-color: lighten( #E65F78, 5% );
+    background-color: lighten( #1ABC9B, 5% );
   }
 
 }
@@ -609,7 +620,7 @@ canvas{
 
 .btn-download{
   cursor: pointer;
-  background-color: #E65F78;
+  background-color: #1ABC9B;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.6px;
@@ -635,7 +646,7 @@ canvas{
       }
     }
       &:hover{
-      background-color: #d8576f;
+      background-color: #128d74;
         top: 97px;
       }
      }
@@ -695,6 +706,21 @@ canvas{
   display: block;
 }
 
+.footer-alt{
+  ul{
+    li{
+      a{
+          &:hover{
+            i{
+             
+                color: #127c67 !important;
+            }
+          }
+      }
+    }
+  }
+}
+
 
 /*===========================
         RESPONSIVE
@@ -724,7 +750,7 @@ canvas{
   }
 
   .custom-nav .navbar-nav li a.active{
-    color: #e65f78 !important;
+    color: #1ABC9B !important;
   }
   .custom-nav .logo .logo-light {
       display: none;
