@@ -56,7 +56,7 @@ $(window).on("scroll", function () {
 // preloader animation
 window.onload = function () {
   //hide the preloader
-  $("#status").fadeOut(), $("#preloader").delay(200).fadeOut("slow"), $("body").delay(350).css({
+  $("#status").fadeOut(), $("#preloader").fadeOut("slow"), $("body").delay(10).css({
     overflow: "visible"
   })
 }
@@ -67,3 +67,6 @@ $(function () {
     $('.navbar-collapse').collapse('hide');
   });
 });
+
+
+
